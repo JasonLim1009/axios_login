@@ -2,6 +2,9 @@
 
 npm i axios
 
+email: eve.holt@reqres.in
+password: cityslicka 
+
 ![Screenshot_1](https://user-images.githubusercontent.com/107684179/198868377-f3526e2e-453e-487b-a86b-0807bb6923e1.png)
 
 
