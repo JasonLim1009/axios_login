@@ -21,23 +21,29 @@ function App() {
       email: email,
       password: password
     })
-    .then(result => {
-      console.log(result.data);
-      alert('success')
-    })
-    .catch(error => {
-      console.log(error);
-      alert('service error')
-    })
+      .then(result => {
+        console.log(result.data);
+        alert('success')
+      })
+      .catch(error => {
+        console.log(error);
+        alert('service error')
+      })
   }
 
   return (
-    <div className="App">
-      <h1>reqres.in</h1>
-      Email : <input value={email} onChange={handleEmail} type='text' /> <br />
-      Password : <input value={password} onChange={handlePassword} type='password' /> <br />
-      <button onClick={handleApi}>login</button>
-    </div>
+    <>
+      <div className="App">
+        <h1><a href='https://reqres.in/'>https://reqres.in/</a></h1><br />
+        Email : <input value={email} onChange={handleEmail} type='text' /> <br />
+        Password : <input value={password} onChange={handlePassword} type='password' /> <br />
+        <button onClick={handleApi}>login</button>
+      </div>
+      <div>
+        <p>email : <br />eve.holt@reqres.in</p><hr />
+        <p>password : <br />cityslicka</p>
+      </div>
+    </>
   );
 }
 
